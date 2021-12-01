@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Home"
+        android:text="All User Details"
         android:textColor="#384356"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,6 +26,16 @@
         android:layout_marginTop="10dp"
         android:background="#384356"
         app:layout_constraintTop_toBottomOf="@id/registerTextview" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        tools:listitem="@layout/user_recycle_view"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
